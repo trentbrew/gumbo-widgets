@@ -20,15 +20,15 @@
 
 <template>
   <div
-    class="min-w-[50vw] flex gap-12 items-center bg-white p-8 px-16 rounded-xl"
+    class="flex flex-col md:flex-row gap-4 md:gap-12 items-center bg-white p-4 md:p-8 px-4 md:px-16 rounded-xl overflow-hidden"
   >
-    <div class="p-6">
-      <div class="mb-8">
-        <h2 class="text-5xl font-bold">
-          <span class="italic font-thin mr-3">OUR</span>
+    <div class="p-4 md:p-6 md:max-w-[700px]">
+      <div class="mb-6 md:mb-10">
+        <h2 class="text-3xl md:text-5xl font-bold">
+          <span class="italic font-thin mr-2 md:mr-3">OUR</span>
           <span class="italic font-bold">MISSION</span>
         </h2>
-        <p class="mt-4 mb-12">
+        <p class="my-4 md:mt-4 md:mb-12">
           We are reimagining the future of media by activating community
           connections and creative opportunities to amplify the voices of our
           neighbors.
@@ -41,30 +41,28 @@
           'bg-base-content/25 hover:!bg-base-content/25':
             key === state.currentSlide,
         }"
-        class="flex justify-between items-center p-6 border-t border-dotted border-base-content/25 hover:bg-base-200 transition-all cursor-pointer rounded-lg"
+        class="flex justify-between items-center p-4 md:p-6 border-t border-dotted border-base-content/25 hover:bg-base-200 transition-all cursor-pointer rounded-lg"
         @click="handleSlide(key)"
       >
-        <span class="text-lg font-medium">{{ key.toUpperCase() }}</span>
-        <span class="text-sm font-medium">{{
+        <span class="text-base md:text-lg font-medium">{{
+          key.toUpperCase()
+        }}</span>
+        <span class="text-xs md:text-sm font-medium">{{
           String(index + 1).padStart(2, '0')
         }}</span>
       </div>
     </div>
-    <div class="relative overflow-hidden aspect-square w-full rounded-lg">
+    <div
+      class="relative overflow-hidden w-full max-w-full md:max-w-[700px] rounded-lg"
+    >
       <div
-        class="flex transition-transform duration-1000 ease-in-out"
+        class="flex transition-transform duration-1000 ease-in-out w-full md:max-w-[700px] bg-blue-500"
         :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
       >
         <div
           v-for="(key, index) in state.slides"
           :key="key"
-          :class="{
-            // 'bg-orange-500': key === 'engage',
-            // 'bg-yellow-500': key === 'teach',
-            // 'bg-green-500': key === 'create',
-            // 'bg-blue-500': key === 'amplify',
-          }"
-          class="aspect-square w-full flex-shrink-0 rounded-lg relative"
+          class="w-full md:aspect-square flex-shrink-0 rounded-lg relative"
         >
           <img
             :src="images[index]"
@@ -74,7 +72,9 @@
           <div
             class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 duration-[5s] slider-text transition-transform ease-out"
           >
-            <h2 class="text-5xl font-bold mb-4 duration-[2s]">
+            <h2
+              class="text-3xl md:text-5xl font-bold mb-3 md:mb-5 duration-[2s]"
+            >
               <span class="italic" v-if="key === 'engage'"
                 ><b>ENGAGE</b> <span class="font-thin">WITH US</span></span
               >
@@ -88,7 +88,9 @@
                 ><b>AMPLIFY</b> <span class="font-thin">YOUR VOICE</span></span
               >
             </h2>
-            <p class="text-lg max-w-[67%]">
+            <p
+              class="text-base md:text-lg max-w-full md:max-w-[67%] opacity-75"
+            >
               <span v-if="key === 'engage'">
                 Our programming is powered by community collaborations and
                 creative exploration. At SPEAK MPLS, we bring you community

@@ -13,3 +13,5 @@ Join us in bringing a community dream space into existence. Rent equipment, book
 # AMPLIFY YOUR VOICE
 
 We’re turning up the volume on creative media made by viewers like you! Watch unique stories from your neighbors on SPEAK MPLS TV and stream content online 24/7. Want to start your creative journey with us? Explore our membership tiers and activate your member journey today!
+
+<iframe src="https://speakmpls-widgets.vercel.app/embed" width="100%" height="100%" frameborder="0"></iframe>
