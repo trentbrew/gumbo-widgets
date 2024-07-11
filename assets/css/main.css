@@ -1,3 +1,17 @@
+/* ------------ fonts ------------ */
+
+@font-face {
+  font-family: 'Metric';
+  src: url('/fonts/Metric-Regular.woff2') format('woff2'),
+    url('/fonts/Metric-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Metric', sans-serif;
+}
+
 /* ------------ custom ------------ */
 
 .fullscreen {
@@ -31,6 +45,10 @@
 @tailwind utilities;
 
 /* ------------ global ------------ */
+
+body {
+  font-family: 'Metric', sans-serif;
+}
 
 h1 {
   font-size: 1.5rem;
