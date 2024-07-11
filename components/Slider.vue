@@ -28,7 +28,7 @@
           <span class="italic font-thin mr-2 md:mr-3">OUR</span>
           <span class="italic font-bold">MISSION</span>
         </h2>
-        <p class="mt-2 md:mt-4 mb-6 md:mb-12">
+        <p class="mt-2 md:mt-4 mb-6 md:mb-12 md:max-w-[75%]">
           We are reimagining the future of media by activating community
           connections and creative opportunities to amplify the voices of our
           neighbors.
