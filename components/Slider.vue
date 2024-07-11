@@ -26,7 +26,7 @@
 
 <template>
   <div
-    class="flex flex-col md:flex-row gap-4 md:gap-12 items-center bg-white p-0 md:p-0 px-4 md:px-16 rounded-xl overflow-hidden"
+    class="flex flex-col justify-center w-full h-full md:flex-row gap-4 md:gap-12 items-center bg-white p-0 md:p-0 px-4 md:px-16 rounded-xl overflow-hidden"
   >
     <div class="p-4 md:p-6">
       <div class="mb-6 md:mb-10">
