@@ -88,7 +88,7 @@
                 ><b>AMPLIFY</b> <span class="font-thin">YOUR VOICE</span></span
               >
             </h2>
-            <p class="text-base max-w-full md:max-w-[67%]">
+            <p class="text-xs md:text-base max-w-full md:max-w-[67%]">
               <span v-if="key === 'engage'">
                 Our programming is powered by community collaborations and
                 creative exploration. At SPEAK MPLS, we bring you community
