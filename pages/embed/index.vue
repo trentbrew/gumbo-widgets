@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <main class="fullscreen center">
-    <Slider />
-  </main>
+  <Slider />
 </template>
