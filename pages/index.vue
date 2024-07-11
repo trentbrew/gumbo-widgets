@@ -4,6 +4,6 @@
 
 <template>
   <main class="fullscreen">
-    <h1 class="text-center">{{ global.greet }}</h1>
+    <h1 class="text-center">SPEAK MPLS</h1>
   </main>
 </template>

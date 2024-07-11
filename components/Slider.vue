@@ -9,6 +9,12 @@
   const state = reactive({
     currentSlide: 'engage',
     slides: ['engage', 'teach', 'create', 'amplify'],
+    colors: {
+      engage: '#B99844',
+      teach: '#A53645',
+      create: '#38725F',
+      amplify: '#1E3C66',
+    },
   })
 
   const handleSlide = key => {
@@ -37,10 +43,10 @@
       <div
         v-for="(key, index) in state.slides"
         :key="key"
-        :class="{
-          'bg-base-content/25 hover:!bg-base-content/25':
-            key === state.currentSlide,
-        }"
+        :style="
+          key === state.currentSlide &&
+          `background-color: ${state.colors[key]}; color: white;`
+        "
         class="flex justify-between items-center p-4 md:p-6 border-t border-dotted border-base-content/25 hover:bg-base-200 transition-all cursor-pointer rounded-lg"
         @click="handleSlide(key)"
       >
@@ -67,7 +73,7 @@
           <img
             :src="images[index]"
             alt="Slider Image"
-            class="rounded-md w-full h-full object-cover brightness-75 contrast-75"
+            class="w-full h-full object-cover brightness-75 contrast-75"
           />
           <div
             class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 duration-[5s] slider-text transition-transform ease-out"
