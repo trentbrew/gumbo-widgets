@@ -39,25 +39,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* ------------ effects ------------ */
-
-.noisy {
-  filter: brightness(2) contrast(2);
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 400%;
-  height: 400vh;
-  background: transparent url('assets/images/noise.png') repeat 0 0;
-  background-size: 12%;
-  background-repeat: repeat;
-  animation: 1000ms infinite noise ease-out;
-  pointer-events: none;
-  opacity: 1;
-}
-
 /* ------------ animations ------------ */
 
 @keyframes noise {
