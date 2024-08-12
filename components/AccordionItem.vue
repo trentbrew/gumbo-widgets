@@ -53,17 +53,17 @@
     <button
       @click="toggle"
       :aria-controls="itemId"
-      class="text-left w-full rounded-lg p-4 flex justify-between items-center duration-300 !cursor-pointer"
-      :class="state.expanded ? 'bg-gray-200 hover:bg-gray-200' : 'hover:bg-gray-200/0'"
+      class="text-left w-full rounded-lg p-4 flex justify-between items-center duration-[600ms] !cursor-pointer"
+      :class="state.expanded ? 'bg-gray-200 hover:bg-gray-200' : 'hover:bg-gray-200/50'"
     >
       <span class="font-semibold text-gray-800">{{ props.title }}</span>
-      <span class="transform duration-300" :class="state.expanded ? 'rotate-180' : ''">
+      <span class="transform duration-[500ms]" :class="state.expanded ? 'rotate-180' : ''">
         <Icon name="arrow_alt_down" />
       </span>
     </button>
     <div
       @click="toggle"
-      class="duration-300 overflow-hidden transition-height"
+      class="duration-[500ms] overflow-hidden transition-height"
       :style="state.expanded ? `height: ${state.contentHeight}px; opacity: 1;` : 'height: 0px; opacity: 0;'"
     >
       <div ref="slot" class="p-4 text-gray-500">
