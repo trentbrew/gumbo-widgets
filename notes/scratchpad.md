@@ -1,12 +1,10 @@
-<iframe src="https://speakmpls-widgets.vercel.app/embed/newroot/" style="width: 50vw; min-height: 100vh; max-height: none; height: 100%; border: none;"></iframe>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const targetElement = document.getElementById("nested-dropdown");
+  const targetElement = document.querySelector('#nested-dropdown .vc_toggle_content')
   if (targetElement) {
     const iframe = document.createElement("iframe");
-    iframe.src = "https://speakmpls-widgets.vercel.app/embed/newroot/";
-    iframe.style.width = "50vw";
+    iframe.src = "https://speakmpls-widgets.vercel.app/embed/newroot2";
+    iframe.style.width = "100%";
     iframe.style.minHeight = "100vh";
     iframe.style.maxHeight = "none";
     iframe.style.height = "100%";
