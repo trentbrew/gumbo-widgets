@@ -9,8 +9,7 @@
 <template>
   <Html data-theme="light">
     <Head><Title>SPEAK MPLS WIDGETS</Title></Head>
-    <div class="bg-gray-300 min-h-screen flex flex-col justify-center items-center w-full h-full">
-      <!-- TODO: remove the fullscreen styling for embed -->
+    <div class="!bg-transparent min-h-screen flex flex-col items-center w-full h-full">
       <NuxtLayout />
     </div>
   </Html>
