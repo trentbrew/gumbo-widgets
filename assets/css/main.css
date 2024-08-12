@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: 'Metric';
-  src: url('/fonts/Metric-Regular.woff2') format('woff2'),
-    url('/fonts/Metric-Regular.woff') format('woff');
+  src: url('/fonts/Metric-Regular.woff2') format('woff2'), url('/fonts/Metric-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,6 +12,10 @@
 }
 
 /* ------------ custom ------------ */
+
+body {
+  /* background-color: #f0e4c9; */
+}
 
 .fullscreen {
   position: absolute;
@@ -35,7 +38,7 @@
 
 .gradient-blur {
   mask: linear-gradient(black, transparent);
-  backdrop-filter: blur(24px);
+  /* backdrop-filter: blur(24px); */
 }
 
 /* ------------ tailwind ------------ */

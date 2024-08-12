@@ -67,7 +67,7 @@
     :id="itemId"
     role="menuitem"
     :aria-expanded="state.expanded"
-    class="group flex flex-col bg-base-100 rounded-lg text-base-content shadow-sm p-1 duration-[420ms] shadow-black/[0.12]"
+    class="group flex flex-col bg-white rounded-lg text-base-content shadow-sm p-1 duration-[420ms] shadow-black/[0.12] min-w-[400px]"
     :class="`${
       state.expanded
         ? 'z-10 !scale-[1.036] active:!scale-[1] !duration-[500ms] active:!shadow-sm !shadow-xl brightness-100 mb-0 mt-0 active:!brightness-[0.9]'
@@ -82,10 +82,10 @@
       class="text-left w-full rounded-lg p-4 flex justify-between items-center duration-[400ms] !cursor-pointer"
       :class="
         props.nested
-          ? 'bg-base-content/75 text-white hover:text-white'
+          ? 'bg-base-content/75 text-[#F0E4C9] hover:text-[#F0E4C9]'
           : state.expanded
-          ? 'bg-gray-100/0 hover:bg-gray-100/0 active:bg-gray-200/0'
-          : 'hover:bg-base-100/0 active:bg-base-100/0'
+          ? 'bg-[#F0E4C9]/0 hover:bg-[#F0E4C9]/0 active:bg-[#F0E4C9]/0'
+          : 'hover:bg-[#F0E4C9]/0 active:bg-[#F0E4C9]/0'
       "
     >
       <span
@@ -113,7 +113,7 @@
 
 <style scoped>
   li {
-    @apply border-b border-gray-200;
+    @apply border-b border-base-200;
   }
   li:last-child {
     @apply border-b-0;
