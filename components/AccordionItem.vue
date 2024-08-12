@@ -64,7 +64,6 @@
 
 <template>
   <li
-    @click="toggle"
     :id="itemId"
     role="menuitem"
     :aria-expanded="state.expanded"
@@ -78,6 +77,7 @@
     }`"
   >
     <div
+      @click="toggle"
       :aria-controls="itemId"
       class="text-left w-full rounded-lg p-4 flex justify-between items-center duration-[400ms] !cursor-pointer"
       :class="

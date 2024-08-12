@@ -56,7 +56,7 @@ $(acnav).click(function () {
 
 
     gsap.set(chars2, {
-        y:0,
+        y:0,,
         opacity: 1,
     });
 
