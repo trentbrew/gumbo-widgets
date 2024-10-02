@@ -6,13 +6,17 @@ const imageUrl = "https://trentbrew.pockethost.io/api/files/swvnum16u65or8w/9ipk
   <div class="collage-container">
     <div class="collage-scroll">
       <div v-for="i in 4" :key="i" class="collage-item">
-        <img :src="imageUrl" alt="Collage image">
+        <img :src="imageUrl" alt="Collage image" class="hoverable">
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.hoverable:hover {
+  transform: scale(1.01);
+}
+
 .collage-container {
   height: 100vh;
   width: 100vw;
@@ -23,13 +27,14 @@ const imageUrl = "https://trentbrew.pockethost.io/api/files/swvnum16u65or8w/9ipk
 .collage-scroll {
   display: flex;
   flex-direction: column;
-  animation: scroll 45s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 .collage-item {
   margin-top: 0.8rem;
   width: 100%;
   flex-shrink: 0;
+  transition: transform 300ms;
 }
 
 .collage-item img {
@@ -39,7 +44,7 @@ const imageUrl = "https://trentbrew.pockethost.io/api/files/swvnum16u65or8w/9ipk
 }
 
 @keyframes scroll {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
 }
 </style>
