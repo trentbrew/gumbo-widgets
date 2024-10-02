@@ -27,7 +27,7 @@ const imageUrl = "https://trentbrew.pockethost.io/api/files/swvnum16u65or8w/9ipk
 }
 
 .collage-item {
-  margin-top: 0.4rem;
+  margin-top: 0.8rem;
   width: 100%;
   flex-shrink: 0;
 }
