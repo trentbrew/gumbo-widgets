@@ -6,17 +6,13 @@ const imageUrl = "https://trentbrew.pockethost.io/api/files/swvnum16u65or8w/9ipk
   <div class="collage-container">
     <div class="collage-scroll">
       <div v-for="i in 4" :key="i" class="collage-item">
-        <img :src="imageUrl" alt="Collage image" class="hoverable">
+        <img :src="imageUrl" alt="Collage image">
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.hoverable:hover {
-  transform: scale(1.01);
-}
-
 .collage-container {
   height: 100vh;
   width: 100vw;
