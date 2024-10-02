@@ -44,7 +44,7 @@ const imageUrl = "https://trentbrew.pockethost.io/api/files/swvnum16u65or8w/9ipk
 }
 
 @keyframes scroll {
-  0% { transform: translateY(-50%); }
-  100% { transform: translateY(0); }
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
 }
 </style>
