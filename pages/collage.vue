@@ -23,7 +23,7 @@ const imageUrl = "https://trentbrew.pockethost.io/api/files/swvnum16u65or8w/9ipk
 .collage-scroll {
   display: flex;
   flex-direction: column;
-  animation: scroll 30s linear infinite;
+  animation: scroll 45s linear infinite;
 }
 
 .collage-item {
